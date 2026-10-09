@@ -1,0 +1,56 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.counter-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  counter-reset: my-click-counter 0; 
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+#click-trigger {
+  display: none;
+}
+#click-trigger:checked {
+  counter-increment: my-click-counter;
+}
+.counter-display::before {
+  content: counter(my-click-counter);
+  font-size: 64px;
+  font-weight: bold;
+  color: #007bff;
+  display: block;
+  margin-bottom: 20px;
+}
+.counter-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #28a745;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s, transform 0.1s;
+}
+.counter-button:hover {
+  background-color: #218838;
+}
+.counter-button:active {
+  transform: scale(0.95);
+}
