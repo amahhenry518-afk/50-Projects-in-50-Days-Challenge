@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h2>Grade Calculator</h2>
+        <p class="subtitle">Enter your marks out of 100 for each subject</p>
+        
+        <div class="input-group">
+            <label for="maths">Mathematics</label>
+            <input type="number" id="maths" min="0" max="100" placeholder="e.g. 85">
+        </div>
+
+        <div class="input-group">
+            <label for="science">Science</label>
+            <input type="number" id="science" min="0" max="100" placeholder="e.g. 78">
+        </div>
+
+        <div class="input-group">
+            <label for="english">English</label>
+            <input type="number" id="english" min="0" max="100" placeholder="e.g. 92">
+        </div>
+
+        <div class="input-group">
+            <label for="history">History</label>
+            <input type="number" id="history" min="0" max="100" placeholder="e.g. 65">
+        </div>
+
+        <button id="calc-btn" onclick="calculateGrade()">Calculate Results</button>
+
+        <div id="result" class="result-box hidden">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
