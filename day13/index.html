@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>📝 Quick Notes</h1>
+        </header>
+
+        <form id="note-form" class="note-form">
+            <input type="text" id="note-title" placeholder="Note Title..." required>
+            <textarea id="note-content" placeholder="Take a note..." rows="4" required></textarea>
+            <button type="submit" id="add-btn">Add Note</button>
+        </form>
+
+        <div id="notes-container" class="notes-container">
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
