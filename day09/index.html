@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic JavaScript Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <div class="progress-bar-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+
+        <div id="quiz-box">
+            <div class="quiz-header">
+                <span id="question-counter">Question 1 of 5</span>
+                <span id="score-counter">Score: 0</span>
+            </div>
+            <h2 id="question-text" class="question">Question placeholder text goes here?</h2>
+            <div id="options-container" class="options-list">
+            </div>
+            <button id="next-btn" class="control-btn hide">Next Question</button>
+        </div>
+        <div id="result-box" class="hide">
+            <h2>Quiz Completed!</h2>
+            <p id="final-score-text">You scored 0 out of 0.</p>
+            <button id="restart-btn" class="control-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
